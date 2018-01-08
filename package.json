@@ -1,0 +1,97 @@
+{
+  "name": "file-manager",
+  "private": true,
+  "scripts": {
+    "start": "meteor --settings=config/settings.json --port 3100",
+    "test": "meteor test --driver-package practicalmeteor:mocha --port 3200 --settings=config/settings.json"
+  },
+  "dependencies": {
+    "aphrodite": "^1.1.0",
+    "babel-runtime": "6.26.0",
+    "bcrypt": "^1.0.2",
+    "graphql": "^0.12.3",
+    "md5": "^2.2.1",
+    "meteor-node-stubs": "~0.3.2",
+    "moment": "^2.17.1",
+    "prop-types": "^15.6.0",
+    "raven": "^2.3.0",
+    "raven-js": "^3.14.2",
+    "react": "^15.4.2",
+    "react-addons-pure-render-mixin": "^15.4.2",
+    "react-bootstrap": "^0.32.0",
+    "react-dom": "^15.4.2",
+    "react-fontawesome": "^1.5.0",
+    "react-router-dom": "^4.2.2",
+    "reactable": "^0.14.1",
+    "rimraf": "^2.6.1",
+    "simpl-schema": "^1.4.0",
+    "uniforms": "^1.23.0-rc.1",
+    "uniforms-bootstrap3": "^1.23.0-rc.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.1.2",
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-import-resolver-meteor": "^0.4.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-meteor": "^4.0.0",
+    "eslint-plugin-react": "^7.5.1"
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "allowImportExportEverywhere": true
+    },
+    "plugins": [
+      "meteor"
+    ],
+    "extends": [
+      "airbnb",
+      "plugin:meteor/recommended"
+    ],
+    "rules": {
+      "import/no-extraneous-dependencies": "off",
+      "import/extensions": "off",
+      "import/newline-after-import": "off",
+      "import/no-unresolved": "off",
+      "import/prefer-default-export": "off",
+      "object-shorthand": [
+        "error",
+        "always",
+        {
+          "avoidQuotes": false
+        }
+      ],
+      "meteor/eventmap-params": [
+        "error",
+        {
+          "eventParamName": "event",
+          "templateInstanceParamName": "instance"
+        }
+      ],
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [
+            ".js",
+            ".jsx"
+          ]
+        }
+      ],
+      "react/no-find-dom-node": "off",
+      "react/forbid-prop-types": "off",
+      "global-require": "off",
+      "no-underscore-dangle": "off",
+      "function-paren-newline": "off"
+    },
+    "settings": {
+      "import/resolver": "meteor"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+body {
+  padding: 20px;
+}
+
+a, a:focus {
+  outline: none;
+}
+
+.checkbox {
+  padding-left: 0;
+}
+
+.checkbox input,
+.radio input {
+  display: inherit;
+}
+
+.checkbox input[type=checkbox] {
+  margin-right: 5px;
+}
+
+form .badge {
+  background-color: #1DC7EA;
+}

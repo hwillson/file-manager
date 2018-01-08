@@ -1,0 +1,20 @@
+{
+  "public": {
+    "title": "ACME File Manager",
+    "company": {
+      "name": "ACME Inc.",
+      "url": "http://acmeinc.fake"
+    },
+    "sentry": {
+      "dsn": ""
+    }
+  },
+  "private": {
+    "files": {
+      "rootDirectory": "/nas/files/ARF_Knowledgebase"
+    },
+    "sentry": {
+      "dsn": ""
+    }
+  }
+}
